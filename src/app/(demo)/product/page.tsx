@@ -10,7 +10,7 @@ const ProductData = async () => {
 
 export default function ProductPage() {
     ProductData().then((res) => {
-        console.log(res)
+        console.log(res.products)
     })
   return (
     <ContentLayout title="Dashboard">

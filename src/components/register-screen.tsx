@@ -49,11 +49,6 @@ export function RegisterScreen() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the data to your backend
-    // toast({
-    //   title: "Registration Submitted",
-    //   description: "Thank you for registering. We will contact you soon.",
-    // })
   }
 
   return (

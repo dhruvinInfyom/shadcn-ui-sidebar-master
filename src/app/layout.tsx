@@ -35,15 +35,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children
+  children,team
 }: Readonly<{
   children: React.ReactNode;
+  team: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={GeistSans.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
+          {team}
           <SpeedInsights />
         </ThemeProvider>
       </body>

@@ -1,5 +1,5 @@
+'use client'
 import Link from "next/link";
-
 import PlaceholderContent from "@/components/demo/placeholder-content";
 import { ContentLayout } from "@/components/admin-panel/content-layout";
 import {
@@ -10,30 +10,21 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
+import { useEffect } from "react";
 
-export default function CategoriesPage() {
+export default function DashboardPage() {
   return (
-    <ContentLayout title="Categories">
+    <ContentLayout title="Dashboard">
       <Breadcrumb>
-
-      
         <BreadcrumbList>
           <BreadcrumbItem>
-
             <BreadcrumbLink asChild>
               <Link href="/">Home</Link>
-              
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link href="/dashboard">Dashboard</Link>
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>Categories</BreadcrumbPage>
+            <BreadcrumbPage>Dashboard</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
